@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Brighton De Neef</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <nav class="desktop-nav">
+        <div>Brighton De Neef</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contant">Contant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="hamburger-nav">
+        <div>Brighton De Neef</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contant" onclick="toggleMenu()">Contant</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profile">
+        <div class="profile_pic-container">
+            <img src="./assets/profile-pic.png" alt="A profile picture">"
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Brighton De Neef</h1>
+            <p class="section_text_p2">Developer</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download resume</button>
+                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact info</button>
+            </div>
+
+            <div class="socials_container">
+                <img class="icon" src="./assets/linkedin.png" alt="linkedIn logo" onclick="location.href = 'https\:\/\/linkedin.com'">
+                <img class="icon" src="./assets/github.png" alt="github logo" onclick="location.href = 'https\:\/\/github.com/BrightDN'">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
